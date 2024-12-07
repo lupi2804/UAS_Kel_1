@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#5A76BD"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="ExtraText">
+
+        <!-- Icon Menu -->
+        <ImageButton
+            android:id="@+id/menuIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:contentDescription="Menu"
+            android:src="@drawable/menu"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="14dp"
+            android:scaleX="0.6"
+            android:scaleY="0.6"/>/>
+
+        <!-- Title Text with Italic Style -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bookify"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_gravity="center" />
+
+        <!-- Icon Search -->
+        <ImageButton
+            android:id="@+id/searchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:background="@android:color/transparent"
+            android:contentDescription="Search"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+            android:scaleX="0.65"
+            android:scaleY="0.65"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Title for Recently Added Section -->
+    <TextView
+        android:id="@+id/recentlyAddedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recently added"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#5A76BD"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- RecyclerView for Recently Added Books -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRecentlyAdded"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/recentlyAddedTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Title for My Books Section -->
+    <TextView
+        android:id="@+id/myBooksTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My books"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#5A76BD"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewRecentlyAdded"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- RecyclerView for My Books -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMyBooks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/myBooksTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

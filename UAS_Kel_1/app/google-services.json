@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "635277280361",
+    "project_id": "uas-project-956c0",
+    "storage_bucket": "uas-project-956c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635277280361:android:48b12278ed824ae11e4ef8",
+        "android_client_info": {
+          "package_name": "com.example.bookify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClEr_hGpnLgzupNlvOvfeOGQ_m0ZR9p94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635277280361:android:58188101b55a4d5f1e4ef8",
+        "android_client_info": {
+          "package_name": "com.example.project_uas_kel_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClEr_hGpnLgzupNlvOvfeOGQ_m0ZR9p94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
